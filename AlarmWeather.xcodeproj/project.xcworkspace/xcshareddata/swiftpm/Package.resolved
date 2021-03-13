@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AlarmWeatherFramework",
+        "repositoryURL": "https://github.com/badredaha/currentweather.git",
+        "state": {
+          "branch": "main",
+          "revision": "a189cdffb38364c022ffc9b7be6b5b2366bc3083",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

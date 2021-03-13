@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		8C30967B25AB856A0000CBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C30967A25AB856A0000CBCC /* Assets.xcassets */; };
 		8C30967E25AB856A0000CBCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C30967D25AB856A0000CBCC /* Preview Assets.xcassets */; };
 		8C30968925AB856A0000CBCC /* AlarmWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30968825AB856A0000CBCC /* AlarmWeatherTests.swift */; };
+		8C9B087025FCE73F0017973E /* AlarmWeatherFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8C9B086F25FCE73F0017973E /* AlarmWeatherFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9B087025FCE73F0017973E /* AlarmWeatherFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,9 @@
 			dependencies = (
 			);
 			name = AlarmWeather;
+			packageProductDependencies = (
+				8C9B086F25FCE73F0017973E /* AlarmWeatherFramework */,
+			);
 			productName = AlarmWeather;
 			productReference = 8C30967325AB85680000CBCC /* AlarmWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 8C30966A25AB85680000CBCC;
+			packageReferences = (
+				8C9B086E25FCE73F0017973E /* XCRemoteSwiftPackageReference "currentweather" */,
+			);
 			productRefGroup = 8C30967425AB85680000CBCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C9B086E25FCE73F0017973E /* XCRemoteSwiftPackageReference "currentweather" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/badredaha/currentweather.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C9B086F25FCE73F0017973E /* AlarmWeatherFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C9B086E25FCE73F0017973E /* XCRemoteSwiftPackageReference "currentweather" */;
+			productName = AlarmWeatherFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C30966B25AB85680000CBCC /* Project object */;
 }
